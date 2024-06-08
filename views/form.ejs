@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Consultation Form</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Medical Consultation Form</h1>
+        <form id="consultation-form" action="/submit" method="post" enctype="multipart/form-data">
+            <label for="consultation-date">Consultation Date</label>
+            <input type="date" id="consultation-date" name="consultation_date" required>
+
+            <label for="hospital-name">Hospital Name</label>
+            <input type="text" id="hospital-name" name="hospital_name" required>
+
+            <label for="doctor-name">Doctor's Name</label>
+            <input type="text" id="doctor-name" name="doctor_name" required>
+
+            <label for="doctor-specialisation">Doctor Specialisation</label>
+            <input type="text" id="doctor-specialisation" name="doctor_specialisation" required>
+
+            <label for="prescriptions">Prescriptions (PDF)</label>
+            <input type="file" id="prescriptions" name="prescriptions" accept=".pdf" required>
+
+            <label for="medical-report">Medical Report (PDF)</label>
+            <input type="file" id="medical-report" name="medical_report" accept=".pdf" required>
+
+            <label for="next-consultation-date">Next Consultation Date</label>
+            <input type="date" id="next-consultation-date" name="next_consultation_date">
+
+            <label for="additional-documents">Additional Documents</label>
+            <input type="file" id="additional-documents" name="additional_documents" accept=".pdf">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
